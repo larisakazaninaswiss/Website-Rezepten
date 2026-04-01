@@ -1,0 +1,119 @@
+body{
+font-family:system-ui;
+background:#f4f4f4;
+margin:0;
+padding:20px;
+}
+
+/* HEADER */
+
+header{
+text-align:center;
+margin-bottom:20px;
+}
+
+/* FILTER BUTTONS */
+
+.filter{
+text-align:center;
+margin-bottom:25px;
+}
+
+.filter button{
+padding:10px 15px;
+margin:5px;
+border:none;
+border-radius:8px;
+background:#ff7043;
+color:white;
+cursor:pointer;
+transition:0.2s;
+}
+
+.filter button:hover{
+transform:scale(1.1);
+background:#ff5722;
+}
+
+/* GRID */
+
+#rezeptListe{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+/* CARD */
+
+.card{
+background:white;
+border-radius:14px;
+overflow:hidden;
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
+animation:fadeIn 0.6s ease;
+transition:transform 0.2s;
+}
+
+.card:hover{
+transform:translateY(-5px) scale(1.03);
+}
+
+.card img{
+width:100%;
+height:160px;
+object-fit:cover;
+}
+
+.card h2{
+padding:10px;
+font-size:18px;
+}
+
+.card a{
+display:block;
+padding:10px;
+color:#ff7043;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* REZEPT SEITE */
+
+.detailbild{
+width:100%;
+max-height:320px;
+object-fit:cover;
+border-radius:12px;
+margin-bottom:20px;
+}
+
+.back{
+display:inline-block;
+margin-bottom:20px;
+text-decoration:none;
+color:#ff7043;
+font-weight:bold;
+}
+
+/* LISTEN */
+
+ul,ol{
+padding-left:20px;
+}
+
+li{
+margin-bottom:8px;
+}
+
+/* ANIMATION */
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(10px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}

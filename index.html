@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rezeptwelt</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>🍽️ Rezeptwelt</h1>
+<p>Rezepte zum Nachkochen</p>
+</header>
+
+<div class="filter">
+<button onclick="filterRezepte('alle')">Alle</button>
+<button onclick="filterRezepte('pasta')">Pasta</button>
+<button onclick="filterRezepte('dessert')">Dessert</button>
+<button onclick="filterRezepte('asiatisch')">Asiatisch</button>
+<button onclick="filterRezepte('Italienisch')">Italienisch</button>
+<button onclick="filterRezepte('salat')">Salat</button>
+</div>
+
+<main id="rezeptListe"></main>
+
+<script src="script.js"></script>
+</body>
+</html>
